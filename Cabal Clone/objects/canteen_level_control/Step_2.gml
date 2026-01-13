@@ -12,8 +12,14 @@ if !instance_exists(obj_enemy) && !scrolling {
 
 if (cleared) 
 {	
-	if (obj_player_control.player_instance.y <= 410)
+	if (obj_player_control.player_instance.y <= 410) {
+		if obj_player_control.player_instance.vspeed != 0
+			alarm_set(0,150)
+		
+		next = true
 		obj_player_control.player_instance.vspeed = 0
+		
+	}
 	else 
 		obj_player_control.player_instance.vspeed = -2
 }

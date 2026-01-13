@@ -37,5 +37,5 @@
     "path":"sprites/spr_maga_spawner_r/spr_maga_spawner_r.yy",
   },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }

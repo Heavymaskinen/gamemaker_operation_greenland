@@ -10,6 +10,7 @@ if (cleared)
 	if (obj_player_control.player_instance.y <= 410)
 	{
 		
+		next = true
 		if obj_player_control.player_instance.vspeed <0
 			alarm_set(0, 50)
 			

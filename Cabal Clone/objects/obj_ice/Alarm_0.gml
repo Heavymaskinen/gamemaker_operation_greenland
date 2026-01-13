@@ -10,7 +10,8 @@ shooting = true
 free_shots--
 sprite_index = spr_ice_shoot
 hspeed = 0
-var bullet = instance_create_depth(x,y, 1, obj_enemy_bullet)
+
+var bullet = instance_create_depth(x+5*scale, y+13*scale, 1, obj_enemy_bullet)
 bullet.vspeed = 10
 bullet.hspeed = irandom_range(-3, 3)
 if (free_shots>0) 
