@@ -1,0 +1,1 @@
+global.screen_width = 1366

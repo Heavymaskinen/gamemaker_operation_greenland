@@ -35,9 +35,9 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Sprite6",
-    "path":"sprites/Sprite6/Sprite6.yy",
+    "name":"spr_player_control",
+    "path":"sprites/spr_player_control/spr_player_control.yy",
   },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }

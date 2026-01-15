@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"ControlFunctions",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"ControlFunctions",
+  "parent":{
+    "name":"cutscene",
+    "path":"folders/Objects/cutscene.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

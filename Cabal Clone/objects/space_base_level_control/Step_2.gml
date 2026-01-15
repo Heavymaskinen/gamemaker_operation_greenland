@@ -19,6 +19,8 @@ if (cleared)
 	}
 	else 
 		obj_player_control.player_instance.vspeed = -2
+		
+	return
 }
 
 var spawns = instance_number(obj_trigger_spawn);
