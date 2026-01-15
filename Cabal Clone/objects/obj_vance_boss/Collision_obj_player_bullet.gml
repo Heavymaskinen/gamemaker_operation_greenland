@@ -8,7 +8,7 @@ if energy <= 0 && !dead
 {
 	image_index = 0
 	image_speed = 0.6
-	level++
+	
 	if (level >= array_length(sprites)) {
 		dead = true
 		hspeed=0
@@ -20,9 +20,12 @@ if energy <= 0 && !dead
 			dying = true
 			energy = 10
 		}
+		level++
 	}
 	else 
 	{
+		if dying level++
+
 		energy = dying? 10: 20
 	}
 }

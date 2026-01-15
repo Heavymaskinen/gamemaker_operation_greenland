@@ -7,7 +7,7 @@ function vance_talk(mode, text){
 	draw_set_colour(c_black)
 	draw_rectangle(obj_vance.x+300, obj_vance.y, obj_vance.x+600, obj_vance.y+100, false)
 	draw_set_colour(c_gray)
-	draw_text(obj_vance.x+300, obj_vance.y, text )
+	draw_text_transformed(obj_vance.x+300, obj_vance.y, text,2,2,0 )
 }
 
 function stop_vance() {
@@ -21,7 +21,7 @@ function putin_talk(mode, text){
 	obj_putin.mode = mode
 	obj_putin.talking = true
 	draw_set_colour(c_red)
-	draw_text(obj_putin.x-300, obj_putin.y, text )
+	draw_text_transformed(100, obj_putin.y, text,2,2,0)
 }
 
 function stop_putin() {

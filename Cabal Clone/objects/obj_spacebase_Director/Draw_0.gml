@@ -11,5 +11,5 @@ lines[line_count]()
 
 if (delay_count <= 0) {
 	line_count++
-	delay_count = 150
+	delay_count = 250
 }

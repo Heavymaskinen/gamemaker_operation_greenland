@@ -6,12 +6,12 @@ if (shoot_time>0)
 	return
 }
 
-if hspeed == 0 {
-	var rand = irandom_range(0,1)
+if hspeed == 0 {	
 	if !dying 
 	{
+		var rand = irandom_range(0,1)
 		hspeed = rand-14-level
 	} else {
-		hspeed = rand-9-level
+		hspeed = irandom_range(0,2)
 	}
 }
