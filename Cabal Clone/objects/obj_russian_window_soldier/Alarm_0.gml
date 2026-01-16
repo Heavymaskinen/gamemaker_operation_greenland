@@ -1,5 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
+if dying return
+	
 ready = false
 sprite_index = spr_russian_window_shoot
 image_index = 0

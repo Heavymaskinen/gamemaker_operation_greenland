@@ -11,7 +11,11 @@ if hspeed == 0 {
 	{
 		var rand = irandom_range(0,1)
 		hspeed = rand-14-level
-	} else {
+	}
+	if (dead) {
+		hspeed = 0
+	}	
+	else {
 		hspeed = irandom_range(0,2)
 	}
 }

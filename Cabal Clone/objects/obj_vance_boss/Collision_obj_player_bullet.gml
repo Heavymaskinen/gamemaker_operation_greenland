@@ -12,9 +12,10 @@ if energy <= 0 && !dead
 	if (level >= array_length(sprites)) {
 		dead = true
 		hspeed=0
-		level-- 
+		level = array_length(sprites)-1 
+		instance_destroy(self)
 	}
-	else if (level == 4) 
+	else if (level == 3) 
 	{
 		if (!dying) {
 			dying = true
@@ -28,4 +29,6 @@ if energy <= 0 && !dead
 
 		energy = dying? 10: 20
 	}
+} else if dead {
+	instance_destroy(self)
 }
