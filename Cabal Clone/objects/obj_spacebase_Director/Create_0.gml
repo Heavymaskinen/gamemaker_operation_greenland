@@ -4,11 +4,14 @@ delay_count = 150
 line_count = 0
 
 lines = [
+function(){
+	intro("Meanwhile in the office of J.D. Vance")
+},
 function (){
 	vance_talk("cry", "DADDY!! Help me!");
 },
 function (){
-	vance_talk("cry", "It's cold here! No one told me it was cold!")
+	vance_talk("cry", "It's cold here! No one told me it would be cold!")
 },
 function (){
 	vance_talk("cry", "They're shooting at us! And ruining my couches!")

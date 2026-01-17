@@ -4,6 +4,7 @@ instance_destroy(other)
 
 
 if (image_index < last_image) {
+	audio_play_sound(snd_light_hit, 2, false,1,0,random_range(0.8,1.2))
 	image_index++
 	obj_player_control.score_count += 100
 	if (image_index == last_image) {

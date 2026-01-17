@@ -11,7 +11,7 @@ var bullet = instance_create_depth(self.x+self.sprite_height/4, self.y+self.spri
 bullet.direction = 0
 bullet.vspeed = 3
 bullet.hspeed = irandom_range(-15,15)
-
+audio_play_sound(snd_shot, 1, false, 0.5, 0, random_range(1,1.8) )
 if dying || blocked return;
 alarm_set(0, irandom_range(50, 300))
 

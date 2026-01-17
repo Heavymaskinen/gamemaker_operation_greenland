@@ -40,6 +40,7 @@ if (shooting && cool_down <= 0) {
 	sprite_set_speed(player_instance.sprite_index, 35, spritespeed_framespersecond);
 	instance_create_depth(player_aim.x + player_aim.sprite_width/2, player_aim.y + player_aim.sprite_height/2, 0, obj_player_bullet);	
 	cool_down = player_aim.cool_down
+	
 }
 
 

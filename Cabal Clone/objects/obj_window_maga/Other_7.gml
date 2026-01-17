@@ -1,6 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
-
+if is_dead return
+is_dead = true
 var dead = instance_create_layer(x,y,layer, obj_windox_maga_dead)
 dead.image_xscale = image_xscale
 dead.image_yscale = image_yscale

@@ -3,6 +3,7 @@
 instance_destroy(other)
 if (image_index<4)
 {
+	audio_play_sound(snd_light_hit, 2, false,1,0,random_range(1,1.5))
 	obj_player_control.score_count += 50
 	image_index++
 	image_angle -= 5

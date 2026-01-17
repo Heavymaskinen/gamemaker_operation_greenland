@@ -2,7 +2,8 @@
 // You can write your code in this editor
 instance_destroy(other);
 if (dying) return;
-
+audio_play_sound(snd_yell_2, 1, false, random_range(0.8, 1),0, random_range(0.5,2));
+die_sounds = [snd_yell_2, snd_yell_3]
 hspeed = 0;
 dying = true;
 

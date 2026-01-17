@@ -10,8 +10,8 @@ if (obj_player.x - player_move_speed < screen_start) {
 	obj_player.hspeed = 0;
 }
 
-if (obj_player.x > max_width-player_move_speed - 64) {
-	obj_player.x =max_width-player_move_speed  - 64;
+if (obj_player.x + player_move_speed > max_width) {
+	obj_player.x = max_width-player_move_speed;
 	obj_player.hspeed = 0;
 }
 
@@ -20,7 +20,7 @@ if (player_aim.x < player_move_speed) {
 	player_aim.hspeed = 0;
 }
 
-if (player_aim.x > max_width-player_move_speed - 64) {
+if (player_aim.x + 64 > max_width-player_move_speed) {
 	player_aim.x = max_width-player_move_speed - 64;
 	player_aim.hspeed = 0;
 }

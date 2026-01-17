@@ -10,3 +10,4 @@ var bullet = instance_create_depth(x+sprite_width/2, y+sprite_height/2, 0, obj_e
 bullet.image_blend = make_colour_rgb(255,0,0)
 bullet.speed = 5
 bullet.direction = point_direction(x,y, obj_player.x, obj_player.y)
+audio_play_sound(snd_shot, 1, false, 0.5, 0, random_range(1,1.8) )

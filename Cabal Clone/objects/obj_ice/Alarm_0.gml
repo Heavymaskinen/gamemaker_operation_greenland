@@ -12,6 +12,7 @@ sprite_index = spr_ice_shoot
 hspeed = 0
 
 var bullet = instance_create_depth(x+5*scale, y+13*scale, 1, obj_enemy_bullet)
+audio_play_sound(snd_shot_4, 1, false, 0.5, 0.3, random_range(1,1.4))
 bullet.vspeed = 10
 bullet.hspeed = irandom_range(-3, 3)
 if (free_shots>0) 
