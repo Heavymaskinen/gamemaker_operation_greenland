@@ -2,4 +2,4 @@
 // You can write your code in this editor
 dying = false
 ready = false
-energy = 1
+energy = 10

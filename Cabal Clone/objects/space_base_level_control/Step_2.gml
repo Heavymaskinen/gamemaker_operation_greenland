@@ -2,24 +2,28 @@
 
 if (!instance_exists(obj_enemy)) && !cleared {	
 	cleared = true	
+	layer_set_visible(layer_get_id("level_complete"), true)
+	obj_player_control.player_instance.target_x = 639
 	return
 }
 
 if (cleared) 
 {	
-	if (obj_player_control.player_instance.y <= 410)
+	if (obj_player_control.player_instance.at_target)
 	{
+		if (obj_player_control.player_instance.y <= 410)
+		{
 		
-		next = true
-		if obj_player_control.player_instance.vspeed <0
-			alarm_set(0, 50)
+			next = true
+			if obj_player_control.player_instance.vspeed <0
+				alarm_set(0, 50)
 			
-		obj_player_control.player_instance.vspeed = 0
+			obj_player_control.player_instance.vspeed = 0
 		
-	}
-	else 
-		obj_player_control.player_instance.vspeed = -2
-		
+		}
+		else 
+			obj_player_control.player_instance.vspeed = -2
+	}	
 	return
 }
 

@@ -3,6 +3,7 @@
 self.aim_velx = 0;
 self.aim_vely = 0;
 self.direction = 0;
+if player_instance.target_x != -1 return
 //self.shooting = false;
 
 if (keyboard_check(vk_left)) {
@@ -20,10 +21,6 @@ if (keyboard_check(vk_up)) {
 if (keyboard_check(vk_down)) {
 	self.aim_vely = self.aim_move_speed;
 	self.direction += 270;
-}
-
-if (keyboard_check(vk_numpad2)) {
-	player_instance.vspeed = -5
 }
 
 

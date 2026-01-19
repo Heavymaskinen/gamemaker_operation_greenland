@@ -14,7 +14,10 @@ function (){
 	vance_talk("cry", "It's cold here! No one told me it would be cold!")
 },
 function (){
-	vance_talk("cry", "They're shooting at us! And ruining my couches!")
+	var message = "They're shooting at us!"
+	if global.couch_count <= 0
+		message += " And ruining all my couches!"
+	vance_talk("cry", message)
 },
 function (){
 	stop_vance();

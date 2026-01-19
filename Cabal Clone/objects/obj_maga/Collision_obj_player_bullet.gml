@@ -12,5 +12,5 @@ if (rand >= 2)
 	sprite_index = spr_maga_die_2;
 else
 	sprite_index = spr_maga_die_1;
-
+create_spurt(x+sprite_width/2, y +sprite_height/2, irandom_range(700,800))
 obj_player_control.score_count += 10

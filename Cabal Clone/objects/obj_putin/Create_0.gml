@@ -2,3 +2,4 @@
 // You can write your code in this editor
 talking = false
 mode = "N/A"
+visible = false

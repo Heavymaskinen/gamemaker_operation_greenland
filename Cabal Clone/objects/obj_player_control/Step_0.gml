@@ -1,5 +1,21 @@
 /// @description Main control logic
-if (obj_player.dying) return
+
+// Move to target
+if (player_instance.dying) return
+if (player_instance.target_x != -1) {
+	if player_instance.x + 8 < player_instance.target_x
+		player_instance.hspeed = 8
+	else if player_instance.x - 8 > player_instance.target_x
+		player_instance.hspeed = -8
+	else
+	{
+		player_instance.x = player_instance.target_x
+		player_instance.hspeed = 0
+		player_instance.at_target = true
+	}
+	
+	return	
+}
 
 //Scrolling
 if (global.scroller.hspeed > 0 && global.scroller.x > player_instance.x) {

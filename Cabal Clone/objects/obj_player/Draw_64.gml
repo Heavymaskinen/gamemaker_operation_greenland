@@ -19,4 +19,6 @@ for (var i=0;i<obj_player_control.player_aim.ammo;i++) {
 		draw_rectangle(xx,yy,xx+1,yy+10,false)
 }
 
-//draw_text(10, 300, "Enemies: "+string(instance_number(obj_enemy)))
+if (target_x != -1) {
+	draw_text(x, y-50, "X: "+string(x)+ "Target: "+string(target_x))
+}

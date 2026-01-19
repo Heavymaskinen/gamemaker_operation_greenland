@@ -29,6 +29,7 @@ else if (rand == 10 && hspeed != 0)
 	hspeed = 0
 	sprite_index = spr_ice_slip
 	audio_play_sound(snd_fuck_iceberg,1,false, 0.8,0,random_range(1,1.4))
+	create_spurt(x+sprite_width/2, y +sprite_height/2, irandom_range(700,1200))
 	dying = true
 	return
 }

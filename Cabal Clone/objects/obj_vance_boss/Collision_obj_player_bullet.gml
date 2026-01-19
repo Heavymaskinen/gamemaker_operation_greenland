@@ -1,8 +1,11 @@
 /// @description Insert description here
-// You can write your code in this editor
+
+create_spurt(other.x, other.y, 100)
 instance_destroy(other)
+
 hit = true
 energy--
+
 audio_play_sound(snd_light_hit, 2, false, 0.4)
 if energy <= 0 && !dead
 {
@@ -10,6 +13,7 @@ if energy <= 0 && !dead
 	image_speed = 0.6
 	
 	if (level >= array_length(sprites)) {
+		create_spurt(x+sprite_width/2, y+sprite_height/2, 3050)
 		audio_play_sound(snd_argh3, 2, false, 0.4, 0, 0.5)
 		dead = true
 		hspeed=0
@@ -18,6 +22,7 @@ if energy <= 0 && !dead
 	}
 	else if (level == 3) 
 	{
+		create_spurt(x+sprite_width/2, y+sprite_height/2, 650)
 		if (!dying) {
 			audio_play_sound(snd_argh2, 2, false)
 			dying = true
@@ -28,13 +33,18 @@ if energy <= 0 && !dead
 	else 
 	{
 		if dying {
+			create_spurt(x+sprite_width/2, y+sprite_height/2, 1700)
 			level++
 		} else {
+			create_spurt(x+sprite_width/2, y+sprite_height/2, 900)
 			audio_play_sound(snd_yell_3, 2, false, 1, 0, random_range(1,2))
 		}
 
-		energy = dying? 10: 20
+		energy = dying? 10: 30
 	}
 } else if dead {
+	var obj = instance_create_layer(x,y,layer, obj_vance_boss_dead)
+	obj.image_xscale = image_xscale
+	obj.image_yscale = image_yscale
 	instance_destroy(self)
 }
