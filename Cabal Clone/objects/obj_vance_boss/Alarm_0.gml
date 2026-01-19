@@ -19,6 +19,7 @@ if (flip) {
 	}
 	flip = !flip		
 }
+audio_play_sound(snd_zap_shot, 1, false, 0.4)
 
 function create_bullet() {
 	var bullet = instance_create_depth(x+sprite_width*0.8, y+sprite_height/2,0, obj_enemy_bullet)

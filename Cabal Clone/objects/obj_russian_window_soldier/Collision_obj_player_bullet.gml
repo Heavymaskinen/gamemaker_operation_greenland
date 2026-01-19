@@ -7,11 +7,5 @@ sprite_index = spr_russian_window_still
 image_index = 0
 image_speed = 1
 energy--
+audio_play_sound(snd_light_hit, 2, false, 0.4)
 
-if energy <= 0
-{
-	dying = true
-	sprite_index = spr_russian_window_soldier_die
-	image_index = 0
-	image_speed = 1
-}

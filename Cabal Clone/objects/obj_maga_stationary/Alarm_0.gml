@@ -9,6 +9,7 @@ var bullet = instance_create_depth(self.x+self.sprite_height*0.3, self.y+self.sp
 bullet.direction = 0
 bullet.vspeed = 9
 bullet.hspeed = irandom_range(-5,5)
+audio_play_sound(snd_machine_gun_3, 1,false, 0.5, 0, random_range(1, 1.2))
 
 rounds--
 if (rounds > 0)

@@ -5,3 +5,6 @@ active_spawn.source = self
 active_spawn.image_xscale = image_xscale
 active_spawn.image_yscale = image_yscale
 visible = false
+if active_spawn != noone && !dying {
+	
+}
