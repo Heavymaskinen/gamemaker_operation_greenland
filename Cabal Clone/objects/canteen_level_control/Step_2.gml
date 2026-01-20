@@ -1,27 +1,25 @@
-/// @description Insert description here
-// You can write your code in this editor
+/// @description Check clear conditions
+
 if !instance_exists(obj_enemy) && !scrolling {
 	if (global.scroller.x < global.screen_width) {
 		global.scroller.x = global.screen_width
 		global.scroller.hspeed = 5
 		scrolling = true
 	} else {
+		set_player_target(2824)
+		layer_set_visible(layer_get_id("level_complete"), true)
 		cleared = true		
 	}
 }
 
 if (cleared) 
 {	
-	if (obj_player_control.player_instance.y <= 410) {
-		if obj_player_control.player_instance.vspeed != 0
-			alarm_set(0,150)
-		
+	if (move_player_forward_to_target(410) && !next) {
 		next = true
-		obj_player_control.player_instance.vspeed = 0
-		
+		alarm_set(0,150)
 	}
-	else 
-		obj_player_control.player_instance.vspeed = -2
+	
+	return
 }
 
 

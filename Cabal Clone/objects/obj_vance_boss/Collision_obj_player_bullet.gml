@@ -1,6 +1,7 @@
 /// @description Insert description here
 
 create_spurt(other.x, other.y, 100)
+var owner = other.owner.control
 instance_destroy(other)
 
 hit = true
@@ -13,6 +14,7 @@ if energy <= 0 && !dead
 	image_speed = 0.6
 	
 	if (level >= array_length(sprites)) {
+		owner.score_count += 5000
 		create_spurt(x+sprite_width/2, y+sprite_height/2, 3050)
 		audio_play_sound(snd_argh3, 2, false, 0.4, 0, 0.5)
 		dead = true
@@ -22,6 +24,7 @@ if energy <= 0 && !dead
 	}
 	else if (level == 3) 
 	{
+		owner.score_count += 500
 		create_spurt(x+sprite_width/2, y+sprite_height/2, 650)
 		if (!dying) {
 			audio_play_sound(snd_argh2, 2, false)
@@ -33,9 +36,12 @@ if energy <= 0 && !dead
 	else 
 	{
 		if dying {
+			owner.score_count += 500
+			audio_play_sound(snd_argh2, 2, false, 1, 0, random_range(1.5,2))
 			create_spurt(x+sprite_width/2, y+sprite_height/2, 1700)
 			level++
 		} else {
+			owner.score_count += 200
 			create_spurt(x+sprite_width/2, y+sprite_height/2, 900)
 			audio_play_sound(snd_yell_3, 2, false, 1, 0, random_range(1,2))
 		}

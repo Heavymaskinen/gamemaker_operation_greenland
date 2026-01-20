@@ -1,3 +1,3 @@
 /// @description Insert description here
 // You can write your code in this editor
-audio_stop_sound(music_theme1)
+audio_stop_all()

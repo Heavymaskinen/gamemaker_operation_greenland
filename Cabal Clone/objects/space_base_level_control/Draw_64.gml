@@ -1,11 +1,4 @@
 /// @description Insert description here
 // You can write your code in this editor
-
-if (cleared){ 
-	draw_text(500, 300, "LEVEL CLEARED!")
-}
-
-if (next){ 
-	draw_text(500, 500, "Got to next!!")
-	return
-}
+if next
+	draw_text_transformed(500,300,string(alarm_get(0)), 2,2,0)

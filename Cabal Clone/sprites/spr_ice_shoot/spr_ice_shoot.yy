@@ -1,9 +1,9 @@
 {
   "$GMSprite":"v2",
   "%Name":"spr_ice_shoot",
-  "bboxMode":0,
-  "bbox_bottom":43,
-  "bbox_left":0,
+  "bboxMode":2,
+  "bbox_bottom":44,
+  "bbox_left":21,
   "bbox_right":41,
   "bbox_top":0,
   "collisionKind":1,
