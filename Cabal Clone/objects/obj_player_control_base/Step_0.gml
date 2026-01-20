@@ -1,7 +1,19 @@
 /// @description Main control logic
 
+if (player_instance.dying) {	
+	if (life_count > 0) {
+		energy = 20
+		life_count--
+		player_instance.dying = false
+	} else {
+		instance_destroy(player_instance)
+		instance_destroy(player_aim)
+		instance_destroy(self)
+	}
+	
+	return
+}
 // Move to target
-if (player_instance.dying) return
 if (player_instance.target_x != -1) {
 	shooting = false
 	if player_instance.x + 8 < player_instance.target_x
@@ -93,3 +105,4 @@ if (aim_distance > 200 || player_aim.x <= screen_start+player_move_speed
 }
 
 if (cool_down > 0) cool_down--
+

@@ -16,14 +16,3 @@ if (hit) {
 }
 sprite_set_speed(sprite_index, 0, spritespeed_framespersecond);
 image_index = 0
-
-
-if (dying) {	
-	if (control.life_count >0 ) {
-		control.energy = 50
-		control.life_count--
-		dying = false
-	} else {
-		instance_destroy(self)
-	}
-}

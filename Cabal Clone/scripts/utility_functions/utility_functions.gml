@@ -104,3 +104,27 @@ function move_player_forward_to_target(target_y = 410, player) {
 	}
 	return false
 }
+
+function draw_hud(control,x, y) {
+	draw_rectangle_colour(x,y, x+300, y+100, c_gray, c_white, c_dkgray, c_black, false)
+	draw_sprite_ext(spr_pingo_head, 3 - control.life_count, x+5, y+5, 0.2, 0.2, 0, c_white, c_purple)
+	draw_set_colour(c_red)
+	draw_text(x+100,y+10, "Score "+string(control.score_count))
+	for (var i=0;i<control.life_count;i++) {
+			draw_set_colour(c_green)
+			draw_circle(x+100+i*20, y+50,10,false)
+	}
+
+	for (var i=0;i<control.energy;i++) {
+			var xx = x+200+i*3
+			draw_set_colour(c_red)
+			draw_rectangle(xx,y+40,xx+1,y+50,false)
+	}
+
+	for (var i=0;i<control.player_aim.ammo;i++) {
+			var xx = x+5+i*2
+			var yy = y+80
+			draw_set_colour(c_green)
+			draw_rectangle(xx,yy,xx+1,yy+10,false)
+	}
+}
