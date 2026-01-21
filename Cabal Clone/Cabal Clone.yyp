@@ -142,6 +142,7 @@
     {"id":{"name":"snd_yell_3","path":"sounds/snd_yell_3/snd_yell_3.yy",},},
     {"id":{"name":"snd_zap_shot","path":"sounds/snd_zap_shot/snd_zap_shot.yy",},},
     {"id":{"name":"spr_blank","path":"sprites/spr_blank/spr_blank.yy",},},
+    {"id":{"name":"spr_bs_head","path":"sprites/spr_bs_head/spr_bs_head.yy",},},
     {"id":{"name":"spr_bs_portrait","path":"sprites/spr_bs_portrait/spr_bs_portrait.yy",},},
     {"id":{"name":"spr_color_tiles","path":"sprites/spr_color_tiles/spr_color_tiles.yy",},},
     {"id":{"name":"spr_couch","path":"sprites/spr_couch/spr_couch.yy",},},

@@ -105,9 +105,9 @@ function move_player_forward_to_target(target_y = 410, player) {
 	return false
 }
 
-function draw_hud(control,x, y) {
+function draw_hud(control,x, y, sprite) {
 	draw_rectangle_colour(x,y, x+300, y+100, c_gray, c_white, c_dkgray, c_black, false)
-	draw_sprite_ext(spr_pingo_head, 3 - control.life_count, x+5, y+5, 0.2, 0.2, 0, c_white, c_purple)
+	draw_sprite_ext(sprite, 3 - control.life_count, x+5, y+5, 0.2, 0.2, 0, c_white, c_purple)
 	draw_set_colour(c_red)
 	draw_text(x+100,y+10, "Score "+string(control.score_count))
 	for (var i=0;i<control.life_count;i++) {

@@ -14,7 +14,7 @@ if !instance_exists(obj_enemy) && !scrolling {
 
 if (cleared) 
 {	
-	if (move_player_forward_to_target(410) && !next) {
+	if (move_player_forwards(410) && !next) {
 		next = true
 		alarm_set(0,150)
 	}
