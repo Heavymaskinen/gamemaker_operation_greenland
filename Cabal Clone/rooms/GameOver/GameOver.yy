@@ -21,8 +21,8 @@
   ],
   "name":"GameOver",
   "parent":{
-    "name":"Rooms",
-    "path":"folders/Rooms.yy",
+    "name":"screens",
+    "path":"folders/Rooms/screens.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

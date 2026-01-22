@@ -1,10 +1,11 @@
 /// @description Insert description here
 // You can write your code in this editor
-instance_destroy(other)
 if (dying) return
 shooting = false
 image_blend = make_colour_rgb(0,0,255)
-energy--
+energy -= other.damage
+instance_destroy(other)
+
 audio_play_sound(snd_light_hit, 2, false, 0.5,0, random_range(1,2.5));
 
 if (energy > 0) 

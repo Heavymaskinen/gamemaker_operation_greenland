@@ -9,7 +9,7 @@
   "overriddenProperties":[
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_player_aim_type","path":"objects/obj_player_aim_type/obj_player_aim_type.yy",},"propertyId":{"name":"cool_down","path":"objects/obj_player_aim_type/obj_player_aim_type.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"5",},
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_player_aim_type","path":"objects/obj_player_aim_type/obj_player_aim_type.yy",},"propertyId":{"name":"ammo","path":"objects/obj_player_aim_type/obj_player_aim_type.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"200",},
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_player_aim_type","path":"objects/obj_player_aim_type/obj_player_aim_type.yy",},"propertyId":{"name":"consumption","path":"objects/obj_player_aim_type/obj_player_aim_type.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"5",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_player_aim_type","path":"objects/obj_player_aim_type/obj_player_aim_type.yy",},"propertyId":{"name":"consumption","path":"objects/obj_player_aim_type/obj_player_aim_type.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"3",},
   ],
   "parent":{
     "name":"player",

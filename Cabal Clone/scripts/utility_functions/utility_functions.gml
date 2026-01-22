@@ -115,16 +115,19 @@ function draw_hud(control,x, y, sprite) {
 			draw_circle(x+100+i*20, y+50,10,false)
 	}
 
+	draw_sprite_stretched(spr_life_bar_frame1,0, x+180,y+40,100,20)
+	draw_sprite_part(spr_life_bar1, 0, 0, 0, 100 * (control.energy/20), 20,  x+177,y+36)
+	//draw_sprite_stretched(spr_life_bar1,0, x+180,y+40, (control.energy/20)*100,20)
+	/*
 	for (var i=0;i<control.energy;i++) {
 			var xx = x+200+i*3
 			draw_set_colour(c_red)
 			draw_rectangle(xx,y+40,xx+1,y+50,false)
-	}
+	}*/
 
-	for (var i=0;i<control.player_aim.ammo;i++) {
+	for (var i=0;i<control.player_aim.ammo;i++) {		
 			var xx = x+5+i*2
-			var yy = y+80
-			draw_set_colour(c_green)
-			draw_rectangle(xx,yy,xx+1,yy+10,false)
+			var yy = 740
+			draw_sprite(spr_ui_bullet,0,xx,yy)
 	}
 }

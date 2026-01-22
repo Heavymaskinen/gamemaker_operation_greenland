@@ -1,10 +1,10 @@
 /// @description Insert description here
 // You can write your code in this editor
-instance_destroy(other)
+
 if (!dying)
 {
 	audio_play_sound(snd_light_hit, 1, false)
-	image_index++
+	image_index+=other.damage
 	if (image_index >= count) {
 		audio_play_sound(snd_crash2, 1, false)
 		dying = true
@@ -14,3 +14,4 @@ if (!dying)
 		instance_create_depth(x,y,2,item_points)		
 	}
 }
+instance_destroy(other)

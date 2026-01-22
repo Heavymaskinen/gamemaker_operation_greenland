@@ -5,7 +5,7 @@ var owner = other.owner.control
 instance_destroy(other)
 
 hit = true
-energy--
+energy -= other.damage
 
 audio_play_sound(snd_light_hit, 2, false, 0.4)
 if energy <= 0 && !dead
@@ -46,7 +46,7 @@ if energy <= 0 && !dead
 			audio_play_sound(snd_yell_3, 2, false, 1, 0, random_range(1,2))
 		}
 
-		energy = dying? 10: 30
+		energy = dying? 20: 50
 	}
 } else if dead {
 	var obj = instance_create_layer(x,y,layer, obj_vance_boss_dead)

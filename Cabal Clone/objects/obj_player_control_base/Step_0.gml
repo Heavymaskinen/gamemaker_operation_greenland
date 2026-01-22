@@ -64,8 +64,11 @@ player_aim.vspeed = aim_vely;
 // Shoot
 if (shooting && cool_down <= 0) {	
 	player_instance.image_speed = 1
-	var bullet = instance_create_depth(player_aim.x + player_aim.sprite_width/2, player_aim.y + player_aim.sprite_height/2, 0, obj_player_bullet);	
-	bullet.owner = player_instance
+	var bullets = player_aim.consumption > 0 ? player_aim.consumption : 1
+	for (var i=0;i<bullets;i++) {
+		var bullet = instance_create_depth(player_aim.x + player_aim.sprite_width/2+i*random_range(-bullets,bullets), player_aim.y + player_aim.sprite_height/2, 0, player_aim.bullet_type);	
+		bullet.owner = player_instance
+	}
 	cool_down = player_aim.cool_down
 }
 

@@ -18,10 +18,13 @@
     {"name":"inst_1116FD51","path":"rooms/VanceOffice/VanceOffice.yy",},
     {"name":"inst_654EC278","path":"rooms/VanceOffice/VanceOffice.yy",},
     {"name":"inst_778DB200","path":"rooms/VanceOffice/VanceOffice.yy",},
+    {"name":"inst_213780EE","path":"rooms/VanceOffice/VanceOffice.yy",},
   ],
   "isDnd":false,
   "layers":[
-    {"$GMRInstanceLayer":"","%Name":"particles","depth":0,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"name":"particles","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
+    {"$GMRInstanceLayer":"","%Name":"particles","depth":0,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
+        {"$GMRInstance":"v4","%Name":"inst_213780EE","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_213780EE","objectId":{"name":"obj_floor_threshold","path":"objects/obj_floor_threshold/obj_floor_threshold.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":0.0,"y":512.0,},
+      ],"layers":[],"name":"particles","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"player_row","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v4","%Name":"inst_778DB200","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_778DB200","objectId":{"name":"obj_player_setup","path":"objects/obj_player_setup/obj_player_setup.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":448.0,"y":736.0,},
       ],"layers":[],"name":"player_row","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
@@ -41,7 +44,7 @@
           ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":0.5,"scaleY":0.5,"x":832.0,"y":384.0,},
         {"$GMRInstance":"v4","%Name":"inst_4E847411","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_4E847411","objectId":{"name":"obj_noscroll","path":"objects/obj_noscroll/obj_noscroll.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":0.0,"y":704.0,},
         {"$GMRInstance":"v4","%Name":"inst_47D56B6C","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_47D56B6C","objectId":{"name":"obj_portrait","path":"objects/obj_portrait/obj_portrait.yy",},"properties":[
-            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_portrait","path":"objects/obj_portrait/obj_portrait.yy",},"propertyId":{"name":"spawn_obj","path":"objects/obj_portrait/obj_portrait.yy",},"resource":{"name":"item_fast_gun","path":"objects/item_fast_gun/item_fast_gun.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"item_fast_gun",},
+            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_portrait","path":"objects/obj_portrait/obj_portrait.yy",},"propertyId":{"name":"spawn_obj","path":"objects/obj_portrait/obj_portrait.yy",},"resource":{"name":"item_wide_gun","path":"objects/item_wide_gun/item_wide_gun.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"item_wide_gun",},
           ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":256.0,"y":192.0,},
         {"$GMRInstance":"v4","%Name":"inst_1116FD51","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_1116FD51","objectId":{"name":"obj_portrait","path":"objects/obj_portrait/obj_portrait.yy",},"properties":[
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_portrait","path":"objects/obj_portrait/obj_portrait.yy",},"propertyId":{"name":"spawn_obj","path":"objects/obj_portrait/obj_portrait.yy",},"resource":{"name":"item_points","path":"objects/item_points/item_points.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"item_points",},
@@ -55,8 +58,8 @@
   ],
   "name":"VanceOffice",
   "parent":{
-    "name":"Rooms",
-    "path":"folders/Rooms.yy",
+    "name":"section_1",
+    "path":"folders/Rooms/section_1.yy",
   },
   "parentRoom":null,
   "physicsSettings":{
