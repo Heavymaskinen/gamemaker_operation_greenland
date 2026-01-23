@@ -169,22 +169,28 @@ function get_height(obj)
 	return obj.bbox_bottom- obj.bbox_top
 }
 
+
+/// @Description Adjust to horizontal screen borders, returns true if a border has been reached
 function enforce_horizontal_screen_bounds(obj, obj_speed) {
 	
 	var screen_start = min(global.scroller.x, room_width-global.screen_width)
 	var max_width = max(global.screen_width, global.scroller.x)
 
 	// vs left edge
-	if (obj.x - obj_speed <= screen_start) {
+	if (obj.hspeed < 0 && obj.bbox_left - obj_speed <= screen_start) {
 		obj.x = screen_start + obj_speed;
 		obj.hspeed = 0;
+		return true
 	}
 
 	//  vs right edge 
-	if (obj.bbox_right + obj_speed > max_width) {
+	if (obj.hspeed > 0 && obj.bbox_right + obj_speed > max_width) {
 		obj.x = max_width - obj_speed - get_width(obj);
 		obj.hspeed = 0;
+		return true
 	}
+	
+	return false
 
 }
 

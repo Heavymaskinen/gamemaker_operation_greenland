@@ -11,6 +11,7 @@ self.aim_range = 400
 aim_distance = 0
 sprite_direction = "mid"
 player_number = 1
+score_count = 0
 
 self.up_key = noone
 self.down_key = noone

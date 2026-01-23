@@ -1,9 +1,9 @@
 {
   "$GMSprite":"v2",
   "%Name":"spr_vance_die1",
-  "bboxMode":0,
-  "bbox_bottom":63,
-  "bbox_left":1,
+  "bboxMode":2,
+  "bbox_bottom":62,
+  "bbox_left":14,
   "bbox_right":46,
   "bbox_top":0,
   "collisionKind":1,

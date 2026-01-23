@@ -258,11 +258,11 @@
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
     {"roomId":{"name":"Title","path":"rooms/Title/Title.yy",},},
+    {"roomId":{"name":"VanceOffice","path":"rooms/VanceOffice/VanceOffice.yy",},},
     {"roomId":{"name":"SpaceBase","path":"rooms/SpaceBase/SpaceBase.yy",},},
     {"roomId":{"name":"Canteen","path":"rooms/Canteen/Canteen.yy",},},
     {"roomId":{"name":"OfficeHall","path":"rooms/OfficeHall/OfficeHall.yy",},},
     {"roomId":{"name":"SpaceBase_cutscene","path":"rooms/SpaceBase_cutscene/SpaceBase_cutscene.yy",},},
-    {"roomId":{"name":"VanceOffice","path":"rooms/VanceOffice/VanceOffice.yy",},},
     {"roomId":{"name":"Section1Completed","path":"rooms/Section1Completed/Section1Completed.yy",},},
     {"roomId":{"name":"GameOver","path":"rooms/GameOver/GameOver.yy",},},
   ],

@@ -1,9 +1,9 @@
 {
   "$GMSprite":"v2",
   "%Name":"spr_vance_level4",
-  "bboxMode":0,
+  "bboxMode":2,
   "bbox_bottom":63,
-  "bbox_left":6,
+  "bbox_left":13,
   "bbox_right":46,
   "bbox_top":0,
   "collisionKind":1,

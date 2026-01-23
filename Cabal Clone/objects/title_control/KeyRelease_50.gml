@@ -6,4 +6,4 @@ setup_player(1)
 setup_player(2)
 global.couch_count = 4
 setup_particles("particles")
-room_goto_next()
+room_goto(SpaceBase)
