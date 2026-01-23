@@ -7,4 +7,3 @@ draw_text_transformed(400, 450, "og straffet J.D. Vance.", 3, 3,0)
 
 draw_text_transformed(400, 600, "Videre mod Trump Junior!", 3, 3,0)
 
-alarm_set(0, 2000)

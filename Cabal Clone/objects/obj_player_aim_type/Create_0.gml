@@ -4,4 +4,4 @@ bullet_type = obj_player_bullet
 control = noone
 shooting = false
 shot_sound_count = 0
-shot_sounds = [snd_shot, snd_shot_2, snd_shot_3]
+shot_sounds = [snd_shot_4, snd_shot_5, snd_shot_6]

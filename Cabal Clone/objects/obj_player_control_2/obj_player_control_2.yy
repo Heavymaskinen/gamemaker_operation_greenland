@@ -9,8 +9,8 @@
   "name":"obj_player_control_2",
   "overriddenProperties":[],
   "parent":{
-    "name":"player",
-    "path":"folders/Objects/player.yy",
+    "name":"control",
+    "path":"folders/Objects/player/control.yy",
   },
   "parentObjectId":{
     "name":"obj_player_control_base",

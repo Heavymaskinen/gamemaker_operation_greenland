@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"cutscene_functions",
   "parent":{
-    "name":"cutscene",
-    "path":"folders/Objects/cutscene.yy",
+    "name":"section1",
+    "path":"folders/Objects/cutscene/section1.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

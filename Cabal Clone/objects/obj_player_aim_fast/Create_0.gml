@@ -3,4 +3,4 @@
 
 // Inherit the parent event
 event_inherited();
-shot_sounds = [snd_machine_gun_1, snd_machine_gun_2]
+shot_sounds = [snd_machine_gun_1, snd_machine_gun_2,snd_machine_gun_4]

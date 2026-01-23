@@ -126,8 +126,78 @@ function draw_hud(control,x, y, sprite) {
 	}*/
 
 	for (var i=0;i<control.player_aim.ammo;i++) {		
-			var xx = x+5+i*2
+			var xx = x+5+i*6
 			var yy = 740
 			draw_sprite(spr_ui_bullet,0,xx,yy)
+	}
+}
+
+function change_player_gun(control, gun_obj) {
+	audio_play_sound(snd_reload, 1, false)
+	var newAim = instance_create_depth(control.player_aim.x, control.player_aim.y, control.player_aim.layer, gun_obj);
+	newAim.control = control
+	instance_destroy(control.player_aim)
+	control.player_aim = newAim	
+}
+
+function change_to_default_gun(control) {
+	audio_play_sound(snd_gun_empty,2, false)
+	var newAim = instance_create_depth(x, y, depth, obj_player_aim);
+	newAim.control = control
+	control.player_aim = newAim
+	instance_destroy(self)
+}
+
+function player_shoot(player_instance, player_aim) {
+	player_instance.image_speed = 1
+	var bullets = player_aim.consumption > 0 ? player_aim.consumption : 1
+	for (var i=0;i<bullets;i++) {
+		var bullet = instance_create_depth(player_aim.x + player_aim.sprite_width/2+i*random_range(-bullets,bullets), player_aim.y + player_aim.sprite_height/2, 0, player_aim.bullet_type);	
+		bullet.owner = player_instance
+	}
+
+	return player_aim.cool_down
+}
+
+function get_width(obj)
+{
+	return obj.bbox_right - obj.bbox_left
+}
+
+function get_height(obj)
+{
+	return obj.bbox_bottom- obj.bbox_top
+}
+
+function enforce_horizontal_screen_bounds(obj, obj_speed) {
+	
+	var screen_start = min(global.scroller.x, room_width-global.screen_width)
+	var max_width = max(global.screen_width, global.scroller.x)
+
+	// vs left edge
+	if (obj.x - obj_speed <= screen_start) {
+		obj.x = screen_start + obj_speed;
+		obj.hspeed = 0;
+	}
+
+	//  vs right edge 
+	if (obj.bbox_right + obj_speed > max_width) {
+		obj.x = max_width - obj_speed - get_width(obj);
+		obj.hspeed = 0;
+	}
+
+}
+
+function enforce_vertical_screen_bounds(obj, obj_speed, bottom_limit = 0) {
+	// // Aim vs top edge
+	if (obj.y - obj_speed < 0) {
+		obj.y = obj_speed;
+		obj.vspeed = 0;
+	}
+
+	// Aim vs bottom limit
+	if (obj.bbox_bottom + obj_speed > bottom_limit) {
+		obj.y = bottom_limit-obj_speed - get_height(obj)
+		obj.vspeed = 0;
 	}
 }

@@ -9,8 +9,8 @@
   "name":"obj_player_bullet_wide",
   "overriddenProperties":[],
   "parent":{
-    "name":"player",
-    "path":"folders/Objects/player.yy",
+    "name":"weapons",
+    "path":"folders/Objects/player/weapons.yy",
   },
   "parentObjectId":{
     "name":"obj_player_bullet",

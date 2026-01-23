@@ -1,6 +1,6 @@
 {
   "$GMSound":"v2",
-  "%Name":"snd_shot5",
+  "%Name":"snd_shot_6",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -10,17 +10,17 @@
   "compression":0,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":1.8807937,
+  "duration":0.6315646,
   "exportDir":"",
-  "name":"snd_shot5",
+  "name":"snd_shot_6",
   "parent":{
-    "name":"Sounds",
-    "path":"folders/Sounds.yy",
+    "name":"guns",
+    "path":"folders/Sounds/guns.yy",
   },
   "preload":false,
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"snd_shot5.wav",
-  "volume":0.2,
+  "soundFile":"snd_shot_6.wav",
+  "volume":1.0,
 }

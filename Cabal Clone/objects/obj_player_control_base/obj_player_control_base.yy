@@ -13,8 +13,8 @@
   "name":"obj_player_control_base",
   "overriddenProperties":[],
   "parent":{
-    "name":"player",
-    "path":"folders/Objects/player.yy",
+    "name":"control",
+    "path":"folders/Objects/player/control.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -39,5 +39,5 @@
     "path":"sprites/spr_player_control/spr_player_control.yy",
   },
   "spriteMaskId":null,
-  "visible":false,
+  "visible":true,
 }

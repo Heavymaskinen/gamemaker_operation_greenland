@@ -41,6 +41,7 @@
     {"name":"inst_6247F937","path":"rooms/SpaceBase/SpaceBase.yy",},
     {"name":"inst_13AF8262","path":"rooms/SpaceBase/SpaceBase.yy",},
     {"name":"inst_7A2AB652","path":"rooms/SpaceBase/SpaceBase.yy",},
+    {"name":"inst_6D236F5","path":"rooms/SpaceBase/SpaceBase.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -50,6 +51,7 @@
     {"$GMRInstanceLayer":"","%Name":"player_row","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v4","%Name":"inst_6247F937","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_6247F937","objectId":{"name":"obj_player_setup","path":"objects/obj_player_setup/obj_player_setup.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":0.0,"y":704.0,},
         {"$GMRInstance":"v4","%Name":"inst_13AF8262","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_13AF8262","objectId":{"name":"obj_debugger","path":"objects/obj_debugger/obj_debugger.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":-96.0,"y":704.0,},
+        {"$GMRInstance":"v4","%Name":"inst_6D236F5","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_6D236F5","objectId":{"name":"obj_left_threshold","path":"objects/obj_left_threshold/obj_left_threshold.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1366.0,"y":640.0,},
       ],"layers":[],"name":"player_row","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"cover_row","depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v4","%Name":"inst_64C151EA","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_64C151EA","objectId":{"name":"obj_crate","path":"objects/obj_crate/obj_crate.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":544.0,"y":704.0,},

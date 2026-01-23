@@ -4,4 +4,4 @@
 // Inherit the parent event
 event_inherited();
 bullet_type = obj_player_bullet_wide
-shot_sounds = [snd_machine_gun_1, snd_machine_gun_2]
+shot_sounds = [snd_shot, snd_shot_2, snd_shot_3]

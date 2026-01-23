@@ -8,8 +8,8 @@
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_player_aim_type","path":"objects/obj_player_aim_type/obj_player_aim_type.yy",},"propertyId":{"name":"cool_down","path":"objects/obj_player_aim_type/obj_player_aim_type.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"20",},
   ],
   "parent":{
-    "name":"player",
-    "path":"folders/Objects/player.yy",
+    "name":"weapons",
+    "path":"folders/Objects/player/weapons.yy",
   },
   "parentObjectId":{
     "name":"obj_player_aim_type",

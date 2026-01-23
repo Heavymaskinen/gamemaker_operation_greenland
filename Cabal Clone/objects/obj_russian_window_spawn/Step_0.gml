@@ -10,5 +10,6 @@ if dying && !dead
 		sprite_index = spr_russian_window_spawn_dying
 		image_speed = 1
 		dead = true
+		alarm_set(0, -1)
 	}
 }

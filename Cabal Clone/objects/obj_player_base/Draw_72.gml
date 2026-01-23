@@ -3,6 +3,7 @@
 if (dying) 
 {
 	sprite_index = spr_player_die
+	image_speed = 1
 	return
 }
 
@@ -37,6 +38,6 @@ else if (control.sprite_direction == "right") {
 	}
 		
 } else {
-	sprite_index = spr_player
+	sprite_index = hit ? spr_player_hit : spr_player
 	image_xscale = scale	
 }

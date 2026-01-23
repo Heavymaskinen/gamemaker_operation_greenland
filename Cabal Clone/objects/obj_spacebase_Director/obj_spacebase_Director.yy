@@ -14,8 +14,8 @@
   "name":"obj_spacebase_Director",
   "overriddenProperties":[],
   "parent":{
-    "name":"cutscene",
-    "path":"folders/Objects/cutscene.yy",
+    "name":"section1",
+    "path":"folders/Objects/cutscene/section1.yy",
   },
   "parentObjectId":null,
   "persistent":false,

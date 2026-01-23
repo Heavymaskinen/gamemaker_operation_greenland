@@ -1,3 +1,6 @@
+event_inherited()
+
+/*
 /// @description Insert description here
 // You can write your code in this editor
 if (dying) 
@@ -40,3 +43,4 @@ else if (control.sprite_direction == "right") {
 	sprite_index = spr_player
 	image_xscale = scale	
 }
+*/
