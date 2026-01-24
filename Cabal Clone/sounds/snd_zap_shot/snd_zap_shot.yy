@@ -14,8 +14,8 @@
   "exportDir":"",
   "name":"snd_zap_shot",
   "parent":{
-    "name":"Sounds",
-    "path":"folders/Sounds.yy",
+    "name":"guns",
+    "path":"folders/Sounds/guns.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

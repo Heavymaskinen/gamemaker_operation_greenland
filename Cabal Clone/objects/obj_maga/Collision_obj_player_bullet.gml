@@ -1,6 +1,5 @@
 /// @description Insert description here
 // You can write your code in this editor
-instance_destroy(other);
 if (dying) return;
 audio_play_sound(snd_yell_2, 1, false, random_range(0.8, 1),0, random_range(0.5,2));
 die_sounds = [snd_yell_2, snd_yell_3]
@@ -14,3 +13,4 @@ else
 	sprite_index = spr_maga_die_1;
 create_spurt(x+sprite_width/2, y +sprite_height/2, irandom_range(400,800))
 other.owner.control.score_count += 10
+instance_destroy(other);

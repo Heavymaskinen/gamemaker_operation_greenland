@@ -62,18 +62,14 @@ player_aim.hspeed = aim_velx;
 player_aim.vspeed = aim_vely;
 
 // Shoot
-if (shooting && cool_down <= 0) {	
-	player_instance.image_speed = 1
-	var bullet = instance_create_depth(player_aim.x + player_aim.sprite_width/2, player_aim.y + player_aim.sprite_height/2, 0, obj_player_bullet);	
-	bullet.owner = player_instance
-	cool_down = player_aim.cool_down
+if (shooting && cool_down <= 0) {
+	cool_down = player_shoot(player_instance, player_aim)
 }
 
 
-// Move player along with aim if distance is too big
+// Determine player aim direction
 var aim_direction = player_aim.x - player_instance.x
 aim_distance = abs(player_aim.x - player_instance.x);
-
 
 if (aim_direction < 0 && aim_distance > 100) {
 	sprite_direction = "left"
@@ -83,8 +79,12 @@ if (aim_direction < 0 && aim_distance > 100) {
 	sprite_direction = "mid"
 }
 
+if (player_aim.x - aim_move_speed <= screen_start 
+	|| player_aim.bbox_right + aim_move_speed >= max_width) {
+		aim_distance = aim_range
+}
 
-if (shooting) {
+if (shooting) { // Let aim move further when shooting, up to limited rang
 	var distance = player_aim.x - player_instance.x
 	if (distance > aim_range && player_aim.hspeed > 0)
 		player_aim.hspeed = 0
@@ -92,9 +92,8 @@ if (shooting) {
 	if (distance < -aim_range && player_aim.hspeed < 0)
 		player_aim.hspeed = 0
 }
-else
-if (aim_distance > 200 || player_aim.x <= screen_start+player_move_speed 
-|| player_aim.x >= max_width - player_move_speed) {
+else // Move player along with aim if distance is too big or aim is at screen edge
+if (aim_distance >= aim_range/2 ) {
 	if (player_instance.x < player_aim.x && aim_velx > 0 && !shooting) {
 		player_instance.hspeed = player_move_speed;
 	}

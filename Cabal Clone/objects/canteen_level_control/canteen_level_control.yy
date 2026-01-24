@@ -12,8 +12,8 @@
   "name":"canteen_level_control",
   "overriddenProperties":[],
   "parent":{
-    "name":"level_controls",
-    "path":"folders/Objects/level_controls.yy",
+    "name":"section1",
+    "path":"folders/Objects/level_controls/section1.yy",
   },
   "parentObjectId":null,
   "persistent":false,

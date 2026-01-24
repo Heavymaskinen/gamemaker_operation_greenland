@@ -14,8 +14,8 @@
   "exportDir":"",
   "name":"snd_machine_gun_1",
   "parent":{
-    "name":"Sounds",
-    "path":"folders/Sounds.yy",
+    "name":"guns",
+    "path":"folders/Sounds/guns.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

@@ -1,4 +1,4 @@
 /// @description Insert description here
 // You can write your code in this editor
 next = true
-room_goto_next()
+room_goto(SpaceBase_cutscene)

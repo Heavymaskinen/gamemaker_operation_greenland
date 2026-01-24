@@ -11,4 +11,6 @@ if !instance_exists(obj_vance_boss) && !ended {
 		var obj = instance_find(obj_russian_window_spawn, i)
 		obj.dying = true
 	}
+	
+	alarm_set(0, 500)
 }

@@ -2,7 +2,6 @@
 // You can write your code in this editor
 if dying
 {
-	
 	source.active_spawn = noone
 	source.visible = true
 	instance_destroy(self)

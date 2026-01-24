@@ -1,18 +1,14 @@
-/// @description End of shooting animation
-if (hit) {
-	if (control.sprite_direction == "left") {
-		sprite_index = spr_player_side
-		image_xscale = 2
-	}
-	else if (control.sprite_direction == "right") {
-		sprite_index = spr_player_side
-		image_xscale = image_xscale <0 ? image_xscale: -image_xscale
+image_speed = 0
+//image_index = 0
+hit = false
+
+
+if (dying) {	
+	if (control.life_count >0 ) {
+		control.energy = 50
+		control.life_count--
+		dying = false
 	} else {
-		sprite_index = spr_player
-		image_xscale = 2
-		
+		instance_destroy(self)
 	}
-	hit = false
 }
-sprite_set_speed(sprite_index, 0, spritespeed_framespersecond);
-image_index = 0

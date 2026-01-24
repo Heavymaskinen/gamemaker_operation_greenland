@@ -1,4 +1,4 @@
-/// @description Insert description here
+/// @description Shooting delay + speed adjustments
 // You can write your code in this editor
 if (shoot_time>0)
 {
@@ -16,6 +16,6 @@ if hspeed == 0 {
 		hspeed = 0
 	}	
 	else {
-		hspeed = irandom_range(0,2)
+		hspeed = irandom_range(-4,4)
 	}
 }

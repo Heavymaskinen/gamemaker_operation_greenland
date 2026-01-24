@@ -21,8 +21,8 @@
   ],
   "name":"SpaceBase_cutscene",
   "parent":{
-    "name":"Rooms",
-    "path":"folders/Rooms.yy",
+    "name":"section_1",
+    "path":"folders/Rooms/section_1.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

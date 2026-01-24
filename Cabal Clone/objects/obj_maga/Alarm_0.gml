@@ -1,4 +1,4 @@
-/// @description Insert description here
+/// @description Shoot
 // You can write your code in this editor
 if (dying || blocked) return;
 

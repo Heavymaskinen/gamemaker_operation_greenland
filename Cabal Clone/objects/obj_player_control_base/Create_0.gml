@@ -7,10 +7,11 @@ self.aim_velx = 0;
 self.aim_vely = 0;
 self.shooting = false;
 self.cool_down = 10
-self.aim_range = 600
+self.aim_range = 400
 aim_distance = 0
 sprite_direction = "mid"
 player_number = 1
+score_count = 0
 
 self.up_key = noone
 self.down_key = noone
