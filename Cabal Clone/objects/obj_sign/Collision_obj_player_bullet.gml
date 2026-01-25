@@ -10,7 +10,7 @@ if (!dying)
 		dying = true
 		image_index = 0
 		sprite_index = spr_sign_die
-		sprite_set_speed(sprite_index, 20, spritespeed_framespersecond)
+		image_speed =1
 		instance_create_depth(x,y,2,item_points)		
 	}
 }
