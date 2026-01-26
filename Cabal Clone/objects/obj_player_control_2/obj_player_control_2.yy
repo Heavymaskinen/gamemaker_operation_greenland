@@ -13,8 +13,8 @@
     "path":"folders/Objects/player/control.yy",
   },
   "parentObjectId":{
-    "name":"obj_player_control_base",
-    "path":"objects/obj_player_control_base/obj_player_control_base.yy",
+    "name":"obj_base_player_control",
+    "path":"objects/obj_base_player_control/obj_base_player_control.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,

@@ -1,5 +1,10 @@
 /// @description Main control logic
-
+if (energy <= 0) {
+	audio_play_sound(snd_player_die,0,false)
+	player_instance.dying = true
+	player_instance.hspeed = 0
+}
+	
 if (player_instance.dying) {	
 	if (life_count > 0) {
 		energy = 20
@@ -13,6 +18,7 @@ if (player_instance.dying) {
 	
 	return
 }
+
 // Move to target
 if (player_instance.target_x != -1) {
 	shooting = false

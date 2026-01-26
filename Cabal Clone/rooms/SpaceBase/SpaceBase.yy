@@ -42,6 +42,7 @@
     {"name":"inst_13AF8262","path":"rooms/SpaceBase/SpaceBase.yy",},
     {"name":"inst_7A2AB652","path":"rooms/SpaceBase/SpaceBase.yy",},
     {"name":"inst_6D236F5","path":"rooms/SpaceBase/SpaceBase.yy",},
+    {"name":"inst_26A472F4","path":"rooms/SpaceBase/SpaceBase.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -84,6 +85,7 @@
         {"$GMRInstance":"v4","%Name":"inst_4498DDF0","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_4498DDF0","objectId":{"name":"obj_trigger_spawn","path":"objects/obj_trigger_spawn/obj_trigger_spawn.yy",},"properties":[
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_trigger_spawn","path":"objects/obj_trigger_spawn/obj_trigger_spawn.yy",},"propertyId":{"name":"spawn_hspeed","path":"objects/obj_trigger_spawn/obj_trigger_spawn.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"-3",},
           ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1376.0,"y":512.0,},
+        {"$GMRInstance":"v4","%Name":"inst_26A472F4","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_26A472F4","objectId":{"name":"obj_ice_executioner","path":"objects/obj_ice_executioner/obj_ice_executioner.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1280.0,"y":512.0,},
       ],"layers":[],"name":"mid_row","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"back_row","depth":600,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v4","%Name":"inst_53DD8D95","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_53DD8D95","objectId":{"name":"obj_window_spawn","path":"objects/obj_window_spawn/obj_window_spawn.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":0.5,"scaleY":0.5,"x":368.0,"y":208.0,},
